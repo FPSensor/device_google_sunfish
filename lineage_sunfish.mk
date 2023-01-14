@@ -7,6 +7,11 @@
 # Inherit some common Lineage stuff.
 TARGET_DISABLE_EPPE := true
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+RICE_CHIPSET := sm6150
+RICE_MAINTAINER := FPSensor
+SUSHI_BOOTANIMATION := 1080
+TARGET_ENABLE_BLUR := true
+TARGET_HAS_UDFPS := true
 
 # Inherit device configuration
 $(call inherit-product, device/google/sunfish/aosp_sunfish.mk)
